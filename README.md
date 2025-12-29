@@ -60,17 +60,25 @@ Amharic Advice + Market Data → Farmer's Phone
 ## 📁 Project Structure
 ```text
 geberena-ai/
-├── frontend/ # React.js application
-│ ├── src/
-│ │ ├── components/ # Reusable UI components
-│ │ ├── pages/ # Main application pages
-│ │ └── styles/ # CSS and styling
-├── backend/ # Flask application
-│ ├── app.py # Main Flask application
-│ ├── ml_model/ # AI model and prediction logic
-│ ├── database/ # Database models and initialization
-│ └── knowledge_base/ # Amharic agricultural advice JSON
-├── docs/ # Documentation
+├── backend/
+│   ├── app/
+│   │   ├── main.py            # Entry point (FastAPI instance)
+│   │   ├── routes/            # API Endpoints (disease.py, market.py, weather.py)
+│   │   ├── services/          # Business logic (ai_logic.py, market_logic.py)
+│   │   ├── models/            # Database schemas (SQLAlchemy)
+│   │   ├── data/              # Amharic Knowledge Base & Mock JSONs
+│   │   └── uploads/           # Temp storage for farmer-uploaded images
+│   ├── ml_models/             # Saved .h5 or .tflite models
+│   ├── requirements.txt
+│   └── .env                   # Environment variables (API Keys)
+├── frontend/
+│   ├── src/
+│   │   ├── components/        # Reusable UI (Buttons, Navbar)
+│   │   ├── pages/             # PlantDoctor, MarketPlace, Home
+│   │   ├── api/               # Axios configurations to talk to backend
+│   │   └── assets/            # Icons and Amharic localized strings
+│   ├── tailwind.config.js
+│   └── package.json
 └── README.md
 ```
 

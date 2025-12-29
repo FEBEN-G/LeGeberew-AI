@@ -1,0 +1,19 @@
+{
+  "crops": {
+    "Teff (White)": [
+      {"market": "Addis Ababa (Merkato)", "price": 18500, "trend": "up", "region": "Addis Ababa"},
+      {"market": "Adama", "price": 17800, "trend": "stable", "region": "Oromia"},
+      {"market": "Bahir Dar", "price": 17200, "trend": "down", "region": "Amhara"}
+    ],
+    "Maize": [
+      {"market": "Addis Ababa (Merkato)", "price": 5200, "trend": "up", "region": "Addis Ababa"},
+      {"market": "Jimma", "price": 4800, "trend": "stable", "region": "Oromia"},
+      {"market": "Shashemene", "price": 4950, "trend": "up", "region": "Oromia"}
+    ],
+    "Coffee (Buna)": [
+      {"market": "Addis Ababa (ECX)", "price": 28000, "trend": "up", "region": "Addis Ababa"},
+      {"market": "Jimma", "price": 26500, "trend": "stable", "region": "Oromia"},
+      {"market": "Hawassa", "price": 27200, "trend": "up", "region": "Sidama"}
+    ]
+  }
+}
