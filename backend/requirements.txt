@@ -1,7 +1,7 @@
 fastapi
 uvicorn[standard]
 python-multipart
-tflite-runtime
+tensorflow-cpu 
 pillow
-numpy
+numpy<2
 python-dotenv
